@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+
+.card-de-compra {
+  display:inline-block;
+  border-radius: 10px;
+  height: 400px;
+  width:300px ;
+  background-color:blue
+  
+}
+
+.imagen-de-card {
+ border-radius: 10px;
+ width: 200px;
+ 
+}
+
+.
