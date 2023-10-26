@@ -1,14 +1,52 @@
+html {
+  background-color: rgba(153, 152, 153, 0.961);
+}
+
 h1 {
     text-align: center;
 }
+h2 {
+  color: black;
+  text-align: left;
+}
 
+.divi-nova{
+  display:flex;
+  justify-content: center;
+}
+.card-de-exibiçao {
+  display: flex;
+  border: 1px solid #000;
+  border-width: 7px;
+  border-color: black;
+  border-radius: 10px;
+  height: 650px;
+  width:1150px ;
+  background-color:rgb(219, 218, 219)
+  
+  
+}
+.imagem-de-card-de-exibicao {
+  border-radius: 10px;
+  border-width: 7px;
+  border-color: black;
+  width: 645px
+  
+ }
+ .divi-da-descricao{
+  display: flex;
+ 
+ }
 
 .card-de-compra {
   display:inline-block;
+  border: 1px solid #000;
+  border-width: 7px;
+  border-color: black;
   border-radius: 10px;
-  height: 400px;
-  width:300px ;
-  background-color:blue
+  height: 350px;
+  width:250px ;
+  background-color:rgb(219, 218, 219)
   
 }
 
@@ -18,3 +56,23 @@ h1 {
  
 }
 
+.card-de-compra2 {
+  display:inline-block;
+  border: 1px solid #000;
+  border-width: 7px;
+  border-color: black;
+  border-radius: 10px;
+  height: 350px;
+  width:250px ;
+  background-color:rgb(219, 218, 219)
+  
+}
+.centralizar{
+  text-align: center;
+ 
+}
+.botao {
+  border-radius: 10px;
+  background-color: chartreuse;
+  border: 1px solid #000;
+}
