@@ -1,15 +1,21 @@
 html {
-  background-color: rgba(153, 152, 153, 0.961);
+  background-color: rgba(0, 0, 0, 0.961);
 }
 
 h1 {
     text-align: center;
+    font-family:'Bruno Ace', sans-serif;
 }
 h2 {
   color: black;
-  text-align: left;
+  text-align: center;
+  font-family:'Bruno Ace', sans-serif;
 }
+h5 {
+ text-align: center;
 
+
+}
 .divi-nova{
   display:flex;
   justify-content: center;
@@ -18,7 +24,7 @@ h2 {
   display: flex;
   border: 1px solid #000;
   border-width: 7px;
-  border-color: black;
+  border-color: rgb(245, 237, 237);
   border-radius: 10px;
   height: 650px;
   width:1150px ;
@@ -29,7 +35,7 @@ h2 {
 .imagem-de-card-de-exibicao {
   border-radius: 10px;
   border-width: 7px;
-  border-color: black;
+  border-color: rgb(255, 255, 255);
   width: 645px
   
  }
@@ -42,14 +48,14 @@ h2 {
   display:inline-block;
   border: 1px solid #000;
   border-width: 7px;
-  border-color: black;
+  border-color: rgb(232, 232, 232);
   border-radius: 10px;
-  height: 350px;
-  width:250px ;
-  background-color:rgb(219, 218, 219)
+  height: 380px;
+  width:280px ;
+  background-color:rgb(255, 255, 255);
+  align-items:center;
   
 }
-
 .imagen-de-card {
  border-radius: 10px;
  width: 200px;
@@ -74,5 +80,9 @@ h2 {
 .botao {
   border-radius: 10px;
   background-color: chartreuse;
-  border: 1px solid #000;
+  border: 5px solid #000;
+}
+.preco-de-card{
+  text-align: center;
+  font-family:'Bruno Ace', sans-serif;
 }

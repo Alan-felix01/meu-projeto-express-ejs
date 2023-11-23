@@ -3,163 +3,24 @@
 <head>
   <title>Projeto Express e EJS</title>
   <link rel="stylesheet" type="text/css" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>ola world</h1>
-
+  <% for (let produto of produtos) {%>
   <div class="card-de-compra">
     <a href="/produtos">
-    <img src="/camisa.jpg" class="imagen-de-card">
-    <h2>camisa de compresão </h2 class="tiutlo-de-card">
+    <img src="<%= produto.imagem %>" class="imagen-de-card">
+    <h2><%= produto.titulo%> </h2 class="tiutlo-de-card">
     <h2>R$40.00 </h2 class="preço-de-card">
     <div class="centralizar">
       <a class="botao" href="/produtos">ver mais</a>
     </div>
   </a>
 </div>
-  
-<div class="card-de-compra">
-  <a href="/produtos">
-  <img src="/camisa.jpg" class="imagen-de-card">
-  <h2>titulo do </h2 class="tiutlo-de-card">
-  <h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</a>
-</div>
 
-<div class="card-de-compra">
-  <a href="/produtos">
-  <img src="/camisa.jpg" class="imagen-de-card">
-  <h2>titulo do </h2 class="tiutlo-de-card">
-  <h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</a>
-</div>
-
-
-<div class="card-de-compra">
-  <a href="/produtos">
-  <img src="/camisa.jpg" class="imagen-de-card">
-  <h2>titulo do </h2 class="tiutlo-de-card">
-  <h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</a>
-</div>
-
-
-<div class="card-de-compra">
-  <a href="/produtos">
-  <img src="/camisa.jpg" class="imagen-de-card">
-  <h2>titulo do </h2 class="tiutlo-de-card">
-  <h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</a>
-</div>
-
-
-<div class="card-de-compra">
-  <a href="/produtos">
-  <img src="/camisa.jpg" class="imagen-de-card">
-  <h2>titulo do </h2 class="tiutlo-de-card">
-  <h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</a>
-</div>
-
-<div class="card-de-compra">
-  <a href="/produtos">
-  <img src="/camisa.jpg" class="imagen-de-card">
-  <h2>titulo do </h2 class="tiutlo-de-card">
-  <h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</a>
-</div>
-<br>
-<br>
-<br>
-
-
-<div class="card-de-compra2">
-  <a href="/produtos">
-  <img src="/camisa.jpg" class="imagen-de-card">
-  <h2>titulo do </h2 class="tiutlo-de-card">
-  <h2>preço </h2 class="preço-de-card">
-    <div class="centralizar">
-      <a class="botao" href="/produtos">ver mais</a>
-    </div>
-</div>
-
-<div class="card-de-compra2">
-<a href="/produtos">
-<img src="/camisa.jpg" class="imagen-de-card">
-<h2>titulo do </h2 class="tiutlo-de-card">
-<h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-
-</div>
-<div class="card-de-compra2">
-<a href="/produtos">
-<img src="/camisa.jpg" class="imagen-de-card">
-<h2>titulo do </h2 class="tiutlo-de-card">
-<h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</div>
-
-<div class="card-de-compra2">
-<a href="/produtos">
-<img src="/camisa.jpg" class="imagen-de-card">
-<h2>titulo do </h2 class="tiutlo-de-card">
-<h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</div>
-
-<div class="card-de-compra2">
-<a href="/produtos">
-<img src="/camisa.jpg" class="imagen-de-card">
-<h2>titulo do </h2 class="tiutlo-de-card">
-<h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</div>
-
-<div class="card-de-compra2">
-<a href="/produtos">
-<img src="/camisa.jpg" class="imagen-de-card">
-<h2>titulo do </h2 class="tiutlo-de-card">
-<h2>preço </h2 class="preço-de-card">
-  <div class="centralizar">
-    <a class="botao" href="/produtos">ver mais</a>
-  </div>
-</div>
-
-<div class="card-de-compra2">
-  <a href="/produtos">
-  <img src="/camisa.jpg" class="imagen-de-card">
-  <h2>titulo do </h2 class="tiutlo-de-card">
-  <h2>preço </h2 class="preço-de-card">
-    <div class="centralizar">
-      <a class="botao" href="/produtos">ver mais</a>
-    </div>
-  </div>
+<% } %>
+  <h5>@2023 venenum - Alanzinho</h5>
   
 </body>
 </html>
