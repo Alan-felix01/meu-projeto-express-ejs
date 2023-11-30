@@ -1,10 +1,39 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
 html {
   background-color: rgba(0, 0, 0, 0.961);
 }
 
 h1 {
-    text-align: center;
+    text-align:left;
     font-family:'Bruno Ace', sans-serif;
+    color: rgb(251, 249, 249)
 }
 h2 {
   color: black;
@@ -51,7 +80,7 @@ h5 {
   border-color: rgb(232, 232, 232);
   border-radius: 10px;
   height: 380px;
-  width:280px ;
+  width:290px ;
   background-color:rgb(255, 255, 255);
   align-items:center;
   
@@ -81,6 +110,9 @@ h5 {
   border-radius: 10px;
   background-color: chartreuse;
   border: 5px solid #000;
+  height: 50px;
+  width:100px ;
+  font-family:'Bruno Ace', sans-serif;
 }
 .preco-de-card{
   text-align: center;

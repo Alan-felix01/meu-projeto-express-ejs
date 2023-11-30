@@ -22,7 +22,7 @@ const produtos = [
 ]
 
 function BuscarProdutosPorID(id){
-  const produto = produtos.find(produto => produto,id == id);
+  const produto = produtos.find(produto => produto.id == id);
   return produto || null
 }
 
@@ -30,8 +30,9 @@ app.get('/', (req, res) => {
   res.render('index', { produtos });
 });
 
-app.get('/produtos', (req, res) => {
-  res.render('produtos', { message: 'Olá, Mundo!' });
+app.get('/produtos/:id',(req, res) => {
+  const produto = BuscarProdutosPorID(req.params.id)
+  res.render('produtos', { produto });
 });
 
 app.listen(port, () => {

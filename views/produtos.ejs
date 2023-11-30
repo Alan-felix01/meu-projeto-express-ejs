@@ -6,23 +6,22 @@
 </head>
 <body>
   <h1>Venum Store</h1>
+  
   <div class="divi-nova">
     <div class="card-de-exibiçao">
         <div>
-            <img src="/camisa.jpg" class="imagem-de-card-de-exibicao">
+            <img src="/imagens/<%= produto.imagem %>" class="imagem-de-card-de-exibicao">
         </div>
         <div>
             <h2>titulo do </h2 class="">
             <h3></h3 class="divi-da-descricao">
             <h2>preço: </h2>
             <h2 class="preço-de-card-de-exibiçao">R$ 100.00 </h2>
-            <a href="produtos.ejs"><button>COMPRAR</button></a>
+            <a href="/produtos/<%= produto.id %>"><button>COMPRAR</button></a>
         </div>
     </div>
   </div>
- 
-</body>
-</html>
 
 </body>
 </html>
+

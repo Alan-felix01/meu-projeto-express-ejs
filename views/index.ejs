@@ -6,15 +6,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>ola world</h1>
+  
+    <body>
+      <h1>Venum store</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li style="float:right"><a class="active" href="#about">About</a></li>
+    </ul>
+<br>
+
   <% for (let produto of produtos) {%>
   <div class="card-de-compra">
     <a href="/produtos">
-    <img src="<%= produto.imagem %>" class="imagen-de-card">
+    <img src="/imagens/<%= produto.imagem %>" class="imagen-de-card">
     <h2><%= produto.titulo%> </h2 class="tiutlo-de-card">
     <h2>R$40.00 </h2 class="preço-de-card">
     <div class="centralizar">
-      <a class="botao" href="/produtos">ver mais</a>
+      <a class="botao" href="/produtos/<%= produto.id %>">BUY</a>
     </div>
   </a>
 </div>
