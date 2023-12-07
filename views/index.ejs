@@ -11,9 +11,9 @@
       <h1>Venum store</h1>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li style="float:right"><a class="active" href="#about">About</a></li>
+      <li><a href="#news">Novidades</a></li>
+      <li><a href="#contact">Contato</a></li>
+      <li style="float:right"><a class="active" href="#about">Sobre</a></li>
     </ul>
 <br>
 
@@ -21,16 +21,17 @@
   <div class="card-de-compra">
     <a href="/produtos">
     <img src="/imagens/<%= produto.imagem %>" class="imagen-de-card">
-    <h2><%= produto.titulo%> </h2 class="tiutlo-de-card">
-    <h2>R$40.00 </h2 class="preço-de-card">
+    <h2><%= produto.titulo%> </h2 class="titulo-de-card">
+    <h2><%= produto.preco%> </h2 class="preço-de-card">
     <div class="centralizar">
-      <a class="botao" href="/produtos/<%= produto.id %>">BUY</a>
+      <a class="botao" href="/produtos/<%= produto.id %>">comprar</a>
     </div>
   </a>
 </div>
 
 <% } %>
-  <h5>@2023 venenum - Alanzinho</h5>
+
+<h5>@2023 venenum - Alanzinho</h5>
   
 </body>
 </html>
